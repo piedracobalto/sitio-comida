@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" href= "styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- este script sirve para traer los iconos de dicha pagina -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+
+
+<!-- Disable tap highlight on IE -->
+<meta name="msapplication-tap-highlight" content="no">
+<!-- meta tag para poner logo en internet y que sea compatible con android e IOS -->
+
+<link rel="shortcut icon" sizes="128x128" href="images/fiume.png">
+<link rel="shortcut icon" sizes="196x196" href="images/fiume.png">
+
+<link rel="apple-touch-icon" href="images/fiume.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/fiume.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/fiume.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/fiume.png">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+
+<title>Solo Hamburguesas y Milanesas</title>
+
+
+</head>
+
+<body class="container-principal">
+
+    <header>
+        <nav class="navs">
+                <!-- El input, el label es para agregar un checkbox y que funcione como el toggle -->
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <!-- el <i> se usa para agregar los iconos traidos de font awesome -->
+                    <i class="fa fa-bars"></i>
+                </label>
+            <label class="logo"><a class="navs__items" href="#">Solo Hamburguesas y Milanesas </a></label>
+            <ul class="navs__list">
+                <li><a class="navs__items" href="#">carta y delivery</a></li>
+                <li><a class="navs__items" href="#">locales</a></li>
+                <li><a class="navs__items" href="#">reservas</a></li>
+                <li><a class="navs__items" href="#">promociones</a></li>
+                <li><a class="navs__items" href="#">novedades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <div class="container-principal-slider">
+        <div class="background">
+			<img src="images/foto1.jpg" class="bg">
+			<img src="images/foto2.jpg" class="bg">
+			<img src="images/foto3.jpg" class="bg">
+			<img src="images/foto4.jpg" class="bg">
+			<img src="images/foto5.jpg" class="bg">
+		</div>
+		<div class="slider-container">
+			<div class="fondo-img">
+				<div class="tamanio-img">
+					<div class="slider">
+						<div class="img" id="first">
+							<img src="images/foto1.jpg">
+						</div>
+						<div class="img">
+							<img src="images/foto2.jpg">
+						</div>
+						<div class="img">
+							<img src="images/foto3.jpg">
+						</div>
+						<div class="img">
+							<img src="images/foto4.jpg">
+						</div>
+						<div class="img" id="last">
+							<img src="images/foto5.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<button class="btn" id="prev"><i class="fa fa-angle-left"></i></button>
+			<button class="btn" id="next"><i class="fa fa-angle-right"></i></button>
+			<ul class="pagination">
+				<li class="option" op-index="0"></li>
+				<li class="option" op-index="1"></li>
+				<li class="option" op-index="2"></li>
+				<li class="option" op-index="3"></li>
+				<li class="option" op-index="4"></li>
+			</ul>
+		</div>
+    </div>
+    </section>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
